@@ -19,6 +19,14 @@ function test_six(){
   var note = new Note();
   notelist.addNote(note);
   assert.isTrue(notelist.returnAllNotes() === notelist.notes, 'Can return all the notes ')
-}
+};
 
 test_six();
+
+function test_seven(){
+  var notelist = new NoteList();
+  notelist.createAndAddNote()
+  assert.isTrue(notelist.notes[0].readNote() === 'Default note', 'Has added and created a note ')
+};
+
+test_seven();

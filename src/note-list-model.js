@@ -14,5 +14,10 @@
     return this.notes
   };
 
+  NoteList.prototype.createAndAddNote = function(text){
+    var note = new Note(text)
+    this.addNote(note)
+  };
+
 exports.NoteList = NoteList;
 })(this);
