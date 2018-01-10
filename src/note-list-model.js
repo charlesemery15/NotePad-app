@@ -10,5 +10,9 @@
     }
   };
 
+  NoteList.prototype.returnAllNotes = function(){
+    return this.notes
+  };
+
 exports.NoteList = NoteList;
 })(this);

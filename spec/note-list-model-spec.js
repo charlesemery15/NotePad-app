@@ -9,7 +9,16 @@ function test_five(){
   var notelist = new NoteList();
   var note = new Note();
   notelist.addNote(note);
-  assert.isTrue(notelist.notes[0] === note, 'has added a note to the notelist ')
+  assert.isTrue(notelist.notes[0] === note, 'Has added a note to the notelist ')
 };
 
 test_five();
+
+function test_six(){
+  var notelist = new NoteList();
+  var note = new Note();
+  notelist.addNote(note);
+  assert.isTrue(notelist.returnAllNotes() === notelist.notes, 'Can return all the notes ')
+}
+
+test_six();
