@@ -11,3 +11,10 @@ function test_two(){
 };
 
 test_two();
+
+function test_three(){
+  var note = new Note()
+  assert.isTrue(note.readNote() === 'Default note', "Note should be returned ")
+};
+
+test_three();
