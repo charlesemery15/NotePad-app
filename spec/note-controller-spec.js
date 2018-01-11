@@ -22,9 +22,7 @@ window.onload = function(){
     var view = new DoubleView();
     var controller = new Controller(notelist, view);
     var html = controller.view.returnHTML();
-    console.log(html)
     controller.getHTML('app')
-    console.log(controller.getHTML('app'))
     assert.isTrue(document.getElementById('app').innerHTML === html, 'InnerHTML should contain a note list with one note ')
   };
   test_thirteen();

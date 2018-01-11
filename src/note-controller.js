@@ -5,8 +5,6 @@
   };
 
   Controller.prototype.getHTML = function(elementID){
-    console.log(document.getElementsByTagName('body'));
-    console.log(document.getElementById(elementID));
     document.getElementById(elementID).innerHTML = this.view.returnHTML();
   };
 
