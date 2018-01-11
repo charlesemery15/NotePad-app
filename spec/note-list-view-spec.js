@@ -18,8 +18,17 @@ function test_ten(){
   var notelist = new NoteList();
   var view = new View(notelist);
   notelist.createAndAddNote()
-  console.log(notelist)
-  assert.isTrue(view.returnHTML() === '<ul><li><div>Default note</div></li></ul>', 'Will convert a one note note list into an html string ')
+  assert.isTrue(view.returnHTML() === '<ul><li><div>Default note</div></li></ul>', 'Will convert one note from the note list into an html string ')
 };
 
 test_ten();
+
+function test_eleven(){
+  var notelist = new NoteList();
+  var view = new View(notelist);
+  notelist.createAndAddNote('first note')
+  notelist.createAndAddNote('second note')
+  assert.isTrue(view.returnHTML() === '<ul><li><div>first note</div></li><li><div>second note</div></li></ul>', 'Will convert multiple notes from the note list into an html string ')
+};
+
+test_eleven();
