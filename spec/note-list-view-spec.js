@@ -8,7 +8,9 @@ test_eight();
 
 function test_nine(){
   var notelist = new NoteList();
+  console.log(notelist);
   var view = new View(notelist);
+  console.log(view)
   assert.isTrue(view.returnHTML() === '<ul></ul>', 'Will convert an empty note list into an html string ')
 };
 

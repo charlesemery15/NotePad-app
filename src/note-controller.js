@@ -14,5 +14,6 @@
 window.onload = function(){
   controller = new Controller();
   controller.notelist.createAndAddNote('Favourite Drink: Spiced rum and Ginger beer');
+  controller.notelist.createAndAddNote('Favourite Dish: Sausages');
   controller.getHTML('app');
 };

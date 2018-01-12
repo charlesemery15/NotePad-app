@@ -7,6 +7,9 @@ function test_twelve(){
 test_twelve();
 
 window.onload = function(){
+  // https://github.com/makersacademy/course/blob/master/pills/mocking_in_javascript.md
+  // checkout how to double correctly
+  // this still manipulates the page
   function test_thirteen(){
 
     var DoubleNoteList = function(){
