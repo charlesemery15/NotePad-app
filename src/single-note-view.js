@@ -4,8 +4,8 @@
   };
 
   NoteView.prototype.returnHTML = function(){
-    htmlstring = '<li><div>' + this.note.readNote() + '</div></li>';
-    return '<ul>' + htmlstring + '</ul>';
+    return '<p>' + this.note.readNote() + '</p>';
+
   };
 
 exports.NoteView = NoteView;

@@ -9,7 +9,7 @@ test_fourteen();
 function test_fifteen(){
   var note = new Note();
   var noteview = new NoteView(note);
-  assert.isTrue(noteview.returnHTML() === '<ul><li><div>Default note</div></li></ul>', 'Will convert one note from the note into an html string ')
+  assert.isTrue(noteview.returnHTML() === '<p>Default note</p>', 'Will convert one note from the note into an html string ')
 };
 
 test_fifteen();

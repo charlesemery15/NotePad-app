@@ -32,3 +32,10 @@ function test_eleven(){
 };
 
 test_eleven();
+
+// function test_sixteen(){
+//   var notelist = new NoteList();
+//   var view = new View(notelist);
+//   notelist.createAndAddNote('abcdefghigklmnopqrstuvwxyz')
+//   assert.isTrue(view.returnHTML() === '<ul><li><div>abcdefghigklmnopqrst</div></li></ul>', 'Only show 20 characters of a note ')
+// };
